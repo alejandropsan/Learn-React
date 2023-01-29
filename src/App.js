@@ -8,33 +8,47 @@ import Ejemplo2 from './hooks/Ejemplo2';
 import Ejemplo3 from './hooks/Ejemplo3';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
+import GreetingStyled from './components/pure/greetingStyled';
+import Father from './components/container/father';
+import OptionalRender from './components/pure/optionalRender';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" /> */}
         {/* Componente propio Greeting.jsx */}
         {/*<Greeting name="Alejandro"></Greeting>*/}
 
         {/*Componente de ejemplo funcional */}
-        {/*<GreetingF name="Alejandro"></GreetingF>*/}
+        {/*<GreetingF name="Alejandro"></GreetingF>*/} 
         
-        {/*Componente de Listado de Tareas */}
-        {/* <TaskListComponent></TaskListComponent> */}
+        
 
         {/* Ejemplos de uso de HOOKS */}
         {/* <Ejemplo1></Ejemplo1> */}
         {/* <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
-        <Ejemplo4 nombre="Alejandro">
+
+        {/* <Ejemplo4 nombre="Alejandro"> */}
         {/* Todo lo que hay aquí dentro es tratado como props.children */}
-          <h3>
+          {/* <h3>
             Contenido del props.children
           </h3>
-        </Ejemplo4>
+        </Ejemplo4> */}
+
+        {/* <GreetingStyled name="Alejandro"></GreetingStyled> */}
         
-      </header>
+        {/* GESTION DE EVENTOS */}
+        {/* <Father></Father> */}
+      {/* </header> */}
+
+      {/* Ejemplos de renderizado condicional */}
+      <OptionalRender></OptionalRender>
+
+        {/* PROYECTO FINAL */}
+      {/*Componente de Listado de Tareas */}
+        {/* <TaskListComponent></TaskListComponent> */}
     </div>
   );
 }
