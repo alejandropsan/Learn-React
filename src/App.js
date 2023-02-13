@@ -11,6 +11,13 @@ import Ejemplo4 from './hooks/Ejemplo4';
 import GreetingStyled from './components/pure/greetingStyled';
 import Father from './components/container/father';
 import OptionalRender from './components/pure/optionalRender';
+import LoginFormik from './components/pure/forms/loginFormik';
+import RegisterFormik from './components/pure/forms/registerFormik';
+import AsyncExample from './components/pure/AsyncExample';
+import ObservableExample from './components/pure/ObservableExample';
+import FetchExample from './components/pure/FetchExample';
+import AxiosExample from './components/pure/AxiosExample';
+import AxiosCRUDexample from './components/pure/AxiosCRUDexample';
 
 function App() {
   return (
@@ -44,7 +51,18 @@ function App() {
       {/* </header> */}
 
       {/* Ejemplos de renderizado condicional */}
-      <OptionalRender></OptionalRender>
+      {/* <OptionalRender></OptionalRender> */}
+
+        {/* EJEMPLOS DE USO DE FORMIK Y YUP */}
+        {/* <LoginFormik></LoginFormik> */}
+        {/* <RegisterFormik></RegisterFormik> */}
+
+        {/* EJEMPLOS DE ASINCRONÍA Y SUS PROCESOS */}
+        {/* <AsyncExample></AsyncExample> */}
+        {/* <ObservableExample></ObservableExample> */}
+        {/* <FetchExample></FetchExample> */}
+        {/* <AxiosExample></AxiosExample> */}
+        <AxiosCRUDexample></AxiosCRUDexample>
 
         {/* PROYECTO FINAL */}
       {/*Componente de Listado de Tareas */}
